@@ -9,7 +9,8 @@ from urllib.parse import urlparse
 import requests
 from tqdm import tqdm
 
-OS_NAME = "DavinciCodeOS"
+DCOS_NAME = "DavinciCodeOS"
+DCOSX_NAME = "DavinciCodeOSX"
 
 CHUNK_SIZE = 1024 * 1024 * 4  # 4MB
 
@@ -79,8 +80,9 @@ def get_file_data(file_url: str, file_path: str | None) -> bytes:
             return file.read()
 
 
-def write_data(device: str, pre: bool) -> None:
-    filename = f"{device}.json" if not pre else f"{device}_pre.json"
+def write_data(os: str, device: str, pre: bool) -> None:
+    os_part = device if os == DCOS_NAME else f"{device}x"
+    filename = f"{os_part}.json" if not pre else f"{os_part}_pre.json"
 
     with open(filename, "w") as file:
         json.dump(DEVICE_DATA, file, indent=4)
@@ -121,8 +123,8 @@ if __name__ == "__main__":
 
     print("Validating OS name...")
 
-    if os_name != OS_NAME:
-        raise ValueError(f"File is for {os_name}, not {OS_NAME}")
+    if os_name not in (DCOS_NAME, DCOSX_NAME):
+        raise ValueError(f"File is for {os_name}, not {DCOS_NAME} or {DCOSX_NAME}")
 
     print("Generating UNIX timestamp...")
 
@@ -147,6 +149,6 @@ if __name__ == "__main__":
 
     print("Writing JSON...")
 
-    write_data(device_name, args.pre)
+    write_data(os_name, device_name, args.pre)
 
     print(f"Please now update {device_name}_changelog.txt!")
