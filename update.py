@@ -16,7 +16,7 @@ CHUNK_SIZE = 1024 * 1024 * 4  # 4MB
 
 DEVICE_DATA = {
     "error": False,
-    "version": "twelve",
+    "version": "twelve_plus",
     "maintainers": [
         {
             "main_maintainer": True,
