@@ -1,22 +1,26 @@
-# DavinciCodeOS Vergion (20220404-2145) build
+# DavinciCodeOS(X) Ginevra (20220517-1234) build
 
-- Now based on PE+
-- April security patches
-- Fixed gcam crash issues
-- Fixed NFC crashes
-- UI rendering battery life improvements
-- Fixed face unlock
-- Added OTA (with option to switch to a future DCOSX release or pre-releases)
-- LiveDisplay (color profile, display mode, reading mode, color calibration)
-- More QS tiles (e.g. wifi/data, caffeine)
-- Rotation settings
-- Lock screen display (media cover, music visualizer (sometimes broken), power menu)
-- Per-app volume settings
-- Increasing ring volume
-- Network traffic monitor
-- Brightness (slider, auto, control)
-- QS (quick pulldown, visibility, vibrate on touch, dimensions)
+DCOS & DCOSX:
+- May security patches
+- Switched to Vantomkernel
+- A lot of new monet launcher icons
+- Tons of new build optimizations
+- Proper Live display support
+- Auto-brightness toggle in QS
+- Introduced anti-flicker support
+-  Fixed casting crash from apps
+- Vibration intensity control
+- New boot animation
+- jemalloc instead of scudo
+- lmkd instead of slmk
+- Fixed alarm icon
+- Reverted QS background on bright theme
+- Disabled location privacy indicators for system apps due to massive spam
 - Latest vendor sources
-- And more ...
 
-Note: Clean cache of System Updates app from Settings!
+New in DCOSX (our new extended version):
+- Charging stats on lockscreen
+- Allow toggling screen off FOD
+- Toggle to disable battery estimates in QS
+- Unlocking required for more QS tiles
+- App lock (beta)
