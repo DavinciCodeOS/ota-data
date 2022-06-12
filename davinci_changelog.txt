@@ -1,26 +1,5 @@
-# DavinciCodeOS(X) Ginevra (20220517-1234) build
+# DavinciCodeOS(X) Forster (20220612-0805) build
 
 DCOS & DCOSX:
-- May security patches
-- Switched to Vantomkernel
-- A lot of new monet launcher icons
-- Tons of new build optimizations
-- Proper Live display support
-- Auto-brightness toggle in QS
-- Introduced anti-flicker support
--  Fixed casting crash from apps
-- Vibration intensity control
-- New boot animation
-- jemalloc instead of scudo
-- lmkd instead of slmk
-- Fixed alarm icon
-- Reverted QS background on bright theme
-- Disabled location privacy indicators for system apps due to massive spam
-- Latest vendor sources
-
-New in DCOSX (our new extended version):
-- Charging stats on lockscreen
-- Allow toggling screen off FOD
-- Toggle to disable battery estimates in QS
-- Unlocking required for more QS tiles
-- App lock (beta)
+- Fix release
+- Google changed the way how status bar width is calculated. This build reflects the change
