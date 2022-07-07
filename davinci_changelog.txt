@@ -1,5 +1,12 @@
-# DavinciCodeOS(X) Anne (20220612-1821) build
+# DavinciCodeOS(X) Belle (20220707-1125) build
 
-DCOS & DCOSX:
-- Fix release
-- Google changed the way how status bar width is calculated. This build reflects the change
+DCOS:
+- July security patch
+- Fixed silent mic issue in various chat apps
+- Updated device source changes from Arian (makes fod faster and resolves various old blob related issues)
+- Added all recent changes from Pixel Experience
+- Upstreamed our unofficial VantomKernel fork to 4.14.286
+
+DCOSX:
+- Added pocket lock
+- Added data SIM switch QS toggle
