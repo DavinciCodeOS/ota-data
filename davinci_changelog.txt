@@ -1,4 +1,4 @@
-# DavinciCodeOS(X) Ermine (20220707-1125) build
+# DavinciCodeOS(X) Ermine (20220823-1615) build
 
 DCOS:
 - August security patch
