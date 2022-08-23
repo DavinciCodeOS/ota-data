@@ -1,12 +1,12 @@
-# DavinciCodeOS(X) Belle (20220707-1125) build
+# DavinciCodeOS(X) Ermine (20220707-1125) build
 
 DCOS:
-- July security patch
-- Fixed silent mic issue in various chat apps
-- Updated device source changes from Arian (makes fod faster and resolves various old blob related issues)
-- Added all recent changes from Pixel Experience
-- Upstreamed our unofficial VantomKernel fork to 4.14.286
+- August security patch
+- Rebased device trees on latest by Arian, updated Adreno blobs
+- Completely rebased kernel (thanks vantom)
+- ROM and Kernel are built with Clang 16 and Rust 1.63
+- A lot of performance optimizations in art and fwb
+- Disabled iorapd
 
 DCOSX:
-- Added pocket lock
-- Added data SIM switch QS toggle
+- Added setting to toggle notification sound and vibration while screen is on
