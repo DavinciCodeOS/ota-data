@@ -1,12 +1,10 @@
-# DavinciCodeOS(X) Ermine (20220823-1615) build
+# DavinciCodeOS(X) Mundi (20220826-2006) build
 
-DCOS:
-- August security patch
-- Rebased device trees on latest by Arian, updated Adreno blobs
-- Completely rebased kernel (thanks vantom)
-- ROM and Kernel are built with Clang 16 and Rust 1.63
-- A lot of performance optimizations in art and fwb
-- Disabled iorapd
-
-DCOSX:
-- Added setting to toggle notification sound and vibration while screen is on
+Both:
+- Fixup release
+- Fixed battery drain issue
+- Fixed camera in various apps
+- Fixed microphone being silent in some apps
+- Fixed Google Recorder for some people
+- Updated Kernel to 4.14.291
+- Fixed screen off fod toggle
